@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BattleArt Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/doro.ico">
-    <style>
-        :root {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - BattleArt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="/images/doro.ico">
+  <style>
+    :root {
             --primary-bg: #8c76ec;
             --secondary-bg: #a6e7ff;
             --light-purple: #c3b4fc;
@@ -129,11 +129,11 @@
                 color: #fff;
             }
 
-        .btn-secondary {
+        .btn-home {
             background-color: #6c757d;
         }
 
-            .btn-secondary:hover {
+            .btn-home:hover {
                 background-color: #5a6268;
             }
 
@@ -285,12 +285,12 @@
                     border-bottom: none;
                 }
         }
-    </style>
+        
+  </style>
 </head>
 <body>
 
-
-    <nav class="navbar navbar-expand-lg navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
 
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -312,7 +312,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                        <a class="nav-link nav-link-custom d-flex align-items-center" href="profile.html">
                             <i class="fas fa-user me-2"></i> Profile
                         </a>
                     </li>
@@ -321,76 +321,50 @@
         </div>
     </nav>
 
-    <div class="profile-container">
-        <img id="banner-img" src="images/night-road.png" alt="User Profile Banner" class="profile-banner">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card p-4">
+          <div class="text-center mb-4">
+            <h3 class="fw-bold text-dark">🔔 Notifications</h3>
+            <p class="text-muted">Stay updated with your BattleArt activity</p>
+          </div>
 
-        <div class="profile-header">
-            <div class="position-relative">
-                <img id="avatar-img" src="images/nagStare.png" alt="User Avatar" class="profile-avatar">
-            </div>
-            <div class="profile-info">
-                <h3>Zhurricane <span class="badge">User</span></h3>
-                <div class="profile-meta text-muted">
-                    Last Seen: 11 minutes ago<br>
-                    Joined: 4 July 2022 05:18:56 PM<br>
-                </div>
-            </div>
-            <div class="profile-actions">
-                <div class="btn-group">
-                    <button class="btn btn-profile">Edit</button>
-                    <button class="btn btn-profile">
-                        <i class="fas fa-ellipsis-v"></i>
-                    </button>
-                </div>
-            </div>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-semibold">🎨 Your artwork 'Sunset Dreams' received a new reinterpretation!</div>
+                <small class="text-muted">2 hours ago</small>
+              </div>
+              <span class="badge badge-new rounded-pill">New</span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-semibold">💬 Alex commented on your artwork 'Ocean Breeze'.</div>
+                <small class="text-muted">5 hours ago</small>
+              </div>
+              <span class="badge badge-new rounded-pill">New</span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-semibold">❤️ Maria liked your reinterpretation of 'City Lights'.</div>
+                <small class="text-muted">1 day ago</small>
+              </div>
+              <span class="badge bg-secondary rounded-pill">Read</span>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <a href="index.html" class="btn btn-home me-2">⬅ Back to Home</a>
+            <button class="btn btn-primary">Mark All as Read</button>
+          </div>
         </div>
-
-        <ul class="nav nav-pills profile-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Your art</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">History</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Comments</a>
-            </li>
-        </ul>
-
-        <div class="stats-grid">
-            <div class="stat-item">
-                <i class="fas fa-bullhorn fa-2x mb-2" style="color: var(--primary-bg);"></i>
-                <h6>Challenges declared</h6>
-                <p>— 8 challenges</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-paint-brush fa-2x mb-2" style="color: var(--primary-bg);"></i>
-                <h6>Arts Challenged</h6>
-                <p>— 27 arts</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-images fa-2x mb-2" style="color: var(--primary-bg);"></i>
-                <h6>Number of Art made</h6>
-                <p>— 38 arts</p>
-            </div>
-        </div>
-
-        <div class="welcome-section">
-            <h4>Welcome to my camp, traveler.</h4>
-            <p>
-                I joined Artfight in 2022 ! (4th of July!)<br>
-                Here is how I prioritize my characters personally, however this shouldn't stop you from attacking anyone you want!!
-                <br>I wouldn't put characters I don't want art off on here!
-            </p>
-            <div class="star-rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
